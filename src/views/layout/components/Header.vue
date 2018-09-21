@@ -3,7 +3,9 @@
     <!-- <hamburger :toggle-click="toggleSideBar" :is-active="sidebar.opened" class="hamburger-container"/>
 
     <breadcrumb class="breadcrumb-container"/> -->
-
+    <div class="left-menu">
+      <img class="myimg" src="static/img/brand/logo.svg" width="89" height="25" alt="CoreUI Logo">
+    </div>
     <div class="right-menu">
       <template v-if="device!=='mobile'">
         <error-log class="errLog-container right-menu-item"/>
@@ -107,6 +109,14 @@ export default {
   .errLog-container {
     display: inline-block;
     vertical-align: top;
+  }
+  .left-menu {
+    float: left;
+    height: 100%;
+    .myimg {
+      margin-top: 10px;
+      margin-left: 18px;
+    }
   }
   .right-menu {
     float: right;

@@ -4,7 +4,7 @@
 
     <breadcrumb class="breadcrumb-container"/>
 
-    <div class="right-menu">
+    <!-- <div class="right-menu">
       <template v-if="device!=='mobile'">
         <error-log class="errLog-container right-menu-item"/>
 
@@ -44,7 +44,7 @@
           </el-dropdown-item>
         </el-dropdown-menu>
       </el-dropdown>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -52,21 +52,16 @@
 import { mapGetters } from 'vuex'
 import Breadcrumb from '@/components/Breadcrumb'
 import Hamburger from '@/components/Hamburger'
-import ErrorLog from '@/components/ErrorLog'
-import Screenfull from '@/components/Screenfull'
-import SizeSelect from '@/components/SizeSelect'
-import LangSelect from '@/components/LangSelect'
-import ThemePicker from '@/components/ThemePicker'
 
 export default {
   components: {
     Breadcrumb,
-    Hamburger,
-    ErrorLog,
-    Screenfull,
-    SizeSelect,
-    LangSelect,
-    ThemePicker
+    Hamburger
+    // ErrorLog,
+    // Screenfull,
+    // SizeSelect,
+    // LangSelect,
+    // ThemePicker
   },
   computed: {
     ...mapGetters([

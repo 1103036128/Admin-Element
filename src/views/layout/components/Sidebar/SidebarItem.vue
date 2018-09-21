@@ -11,7 +11,7 @@
 
     <el-submenu v-else :index="item.name||item.path">
       <template slot="title">
-        <item v-if="item.meta" :icon="item.meta.icon" :title="generateTitle(item.meta.title)" />
+        <item v-if="item.meta" :icon="item.meta.icon" :title="generateTitle(item.meta.title)" class="el_title"/>
       </template>
 
       <template v-for="child in item.children" v-if="!child.hidden">
