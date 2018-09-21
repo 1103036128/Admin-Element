@@ -1,5 +1,5 @@
 module.exports = {
   NODE_ENV: '"production"',
-  ENV_CONFIG: '"dev"',
+  ENV_CONFIG: '"test"',
   BASE_API: '"https://testapi.toolmaker.io"',
 }
